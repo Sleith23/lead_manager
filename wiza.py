@@ -7,7 +7,7 @@ Created on Fri May 16 21:51:38 2025
 import json
 import http.client
 
-api_key = "8a50ddeaf6922d49e1026f5fdf8671b5e4fa579bbfee81ee68526df8f1bbdab1" # update with your api_key
+api_key = "" # update with your api_key
 list_id = 3658586 # update with the id of the list that you would like returned
 
 conn = http.client.HTTPSConnection('wiza.co')
