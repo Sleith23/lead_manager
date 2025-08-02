@@ -1,6 +1,6 @@
 from espo_api_client import EspoAPI
 import requests
-client = EspoAPI('https://gps.espocloud.com/', '8d74f4c20462b7d9ab0bba90087997fe')
+client = EspoAPI('enter your url', 'enter your api key')
 
 # response = client.request("GET", "Lead")
 # print(response)
