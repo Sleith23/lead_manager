@@ -89,7 +89,7 @@ for lead in crm_leads:
 #     'firstName': firstName,
 #     'lastName': lastName,
 #     'phoneNumber': phone,
-#     'industry': 'Cannabis',
+#     'industry': '',
 #     'emailAddress' : email
 # }
 
@@ -112,7 +112,7 @@ for lead in crm_leads:
 #         {
 #             "type": "equals",
 #             "attribute": "industry",
-#             "value": 'Cannabis',
+#             "value": '',
 #         },
 #     ],
 # }
