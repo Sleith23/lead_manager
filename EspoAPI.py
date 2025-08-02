@@ -32,7 +32,7 @@ print(leads)
 #         {
 #             "type": "equals",
 #             "attribute": "industry",
-#             "value": 'Cannabis',
+#             "value": '',
 #         },
 #     ],
 # }
