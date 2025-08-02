@@ -2,7 +2,7 @@
 """
 Created on Fri May 16 21:51:38 2025
 
-@author: scott
+@author: scot
 """
 import json
 import http.client
@@ -47,7 +47,7 @@ for contact in contacts:
         'lastName': lastName,
         'phoneNumber': phone,
         'emailAddress': email,
-        'industry': 'Cannabis',
+        'industry': 'healthcare',
         'accountName': account,
         'title' : title,
         'website' : website,
@@ -61,20 +61,20 @@ for lead in crm_leads:
     print(lead)
 for lead in crm_leads:
     try:
-        print("🔄 Attempting to create lead:", lead['emailAddress'])
+        print("Attempting to create lead:", lead['emailAddress'])
         client.request('POST', 'Lead', lead)
-        print("✅ Lead created:", lead['emailAddress'])
+        print("Lead created:", lead['emailAddress'])
 
     except EspoAPIError as e:
         if client.status_code == 409:
-            print("⚠️ Duplicate lead skipped:", lead['emailAddress'])
+            print("Duplicate lead skipped:", lead['emailAddress'])
             continue  # Skip to next
         else:
-            print("❌ EspoAPIError:", str(e))
+            print("EspoAPIError:", str(e))
             continue  # Optional: keep going despite other errors
 
     except Exception as e:
-        print("❌ Unexpected error:", str(e))
+        print("Unexpected error:", str(e))
         continue  # Continue loop despite failure
 
     
